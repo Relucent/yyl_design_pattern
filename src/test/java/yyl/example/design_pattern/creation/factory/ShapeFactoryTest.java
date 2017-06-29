@@ -1,8 +1,10 @@
 package yyl.example.design_pattern.creation.factory;
 
-import yyl.example.design_pattern.creation.factory.impl.CircleFactory;
-import yyl.example.design_pattern.creation.factory.impl.RectangleFactory;
-import yyl.example.design_pattern.creation.factory.impl.TriangleFactory;
+import yyl.example.design_pattern.creation.factory_method.Shape;
+import yyl.example.design_pattern.creation.factory_method.ShapeFactory;
+import yyl.example.design_pattern.creation.factory_method.impl.CircleFactory;
+import yyl.example.design_pattern.creation.factory_method.impl.RectangleFactory;
+import yyl.example.design_pattern.creation.factory_method.impl.TriangleFactory;
 
 public class ShapeFactoryTest {
 	public static void main(String[] args) {

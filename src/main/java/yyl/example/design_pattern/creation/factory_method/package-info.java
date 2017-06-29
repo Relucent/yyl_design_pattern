@@ -1,7 +1,7 @@
 /**
  * 工厂方法模式 <br>
  */
-package yyl.example.design_pattern.creation.factory;
+package yyl.example.design_pattern.creation.factory_method;
 
 // 工厂方法模式：
 // 一个抽象产品类，可以派生出多个具体产品类。   
