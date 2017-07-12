@@ -17,6 +17,5 @@ public class Cocktail {
 		agave.taste();
 		cointreau.taste();
 		limeJuice.taste();
-
 	}
 }
