@@ -1,15 +1,20 @@
 package yyl.example.design_pattern.creation.singleton;
 
 /**
- * 枚举<br>
- * 使用JVM机制，不仅能避免多线程同步问题，而且还自动支持序列化机制，防止反序列化重新创建新的对象，绝对防止多次实例化。<br>
- * 需要 JDK1.5 及以上版本支持 ( ENUM 特性 是JDK1.5 之后才加入 )
+ * 登记式/静态内部类<br>
+ * 当 Singleton 类被装载时候，instance 不一定被初始化。<br>
+ * 因为 SingletonHolder 类没有被主动使用，只有显示通过调用 getInstance 方法时，才会显示装载 SingletonHolder 类，从而实例化 instance<br>
  */
-public enum Singleton5 {
+public class Singleton5 {
 
-	INSTANCE;
+	private static class SingletonHolder {
+		private static final Singleton5 INSTANCE = new Singleton5();
+	}
 
-	public void method() {
-		System.out.println("hello world!");
+	private Singleton5() {
+	}
+
+	public static final Singleton5 getInstance() {
+		return SingletonHolder.INSTANCE;
 	}
 }
